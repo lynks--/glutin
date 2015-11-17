@@ -116,7 +116,7 @@ pub enum MouseScrollDelta {
 	PixelDelta(f32, f32)
 }
 
-#[derive(Debug, Hash, PartialEq, Eq, Clone, Copy)]
+#[derive(Debug, Hash, PartialEq, Eq, Clone, Copy, PartialOrd, Ord)]
 pub enum VirtualKeyCode {
     /// The '1' key over the letters.
     Key1,
